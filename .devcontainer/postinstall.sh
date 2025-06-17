@@ -50,3 +50,12 @@ EOF
 
 
 echo "postinstall.sh finished"
+
+#!/usr/bin/env bash
+set -e
+
+# Exemplo de instalação de dependências do projeto:
+npm install
+
+# Instalar fzf
+sudo apt-get update && sudo apt-get install -y fzf
